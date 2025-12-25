@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle, #fff 40%, #fbeaea);
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #8b0000;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    background: #fff5f5;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 6px solid #8b0000;
+}
+
+/* UNIQUE DONATE CARD */
+.donate-card {
+    background: linear-gradient(135deg, #8b0000, #d32f2f);
+    color: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.donate-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+}
+
+.donate-inner {
+    background: #fff;
+    padding: 15px;
+    border-radius: 16px;
+    width: 220px;
+    margin: 20px auto;
+    box-shadow: 0 0 25px rgba(255,215,215,0.9);
+    transition: transform 0.3s;
+}
+
+.donate-inner:hover {
+    transform: scale(1.05);
+}
+
+.donate-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.upi-id {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffecec;
+}
+
+.blessing {
+    margin-top: 15px;
+    font-style: italic;
+    color: #ffdada;
+}
